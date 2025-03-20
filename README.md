@@ -2,25 +2,25 @@
 This repository contains a collection of scripts designed to process climate data from CHELSA (chelsa-climate.org). The scripts facilitate the download, unit conversion, cropping by biome, and merging of raster data for precipitation, min temperature, and max temperature. The processed data can be used for various environmental and climate studies.
 
 Files:
-# 0_automatic_download_CHELSA.py
+0_automatic_download_CHELSA.py
 
 Description: This Python script automates the download of CHELSA rasters using links provided in text files. It downloads the rasters for precipitation, minimum temperature, and maximum temperature and saves them to specified directories.
 
 Usage: Ensure the text files containing the download links are correctly set. Run the script to download the rasters.
 
-# 1_convert_units_crop_biome_prec.R
+1_convert_units_crop_biome_prec.R
 
 Description: This script processes precipitation rasters from CHELSA. It converts the units (dividing by 100 and rounding), crops the rasters to a specified biome, and saves the processed rasters to an output directory.
 
 Usage: Ensure the input rasters are in the specified input directory and the biome shapefile is correctly set. Run the script to process the rasters.
 
-# 1_convert_units_crop_biome_tmin_tmax.R
+1_convert_units_crop_biome_tmin_tmax.R
 
 Description: This script processes temperature rasters (minimum and maximum) from CHELSA. It converts the units (dividing by 10 and subtracting 273.15), crops the rasters to a specified biome, and saves the processed rasters to an output directory.
 
 Usage: Ensure the input rasters are in the specified input directory and the biome shapefile is correctly set. Run the script to process the rasters.
 
-# 2_merge_rasters_BR.R
+2_merge_rasters_BR.R
 
 Description: This script combines rasters from different biomes (Amazon, Pampa, Pantanal, Cerrado, Caatinga, and Atlantic Forest) into a single raster for Brazil. It uses the mosaic function from the terra package to merge the rasters.
 
