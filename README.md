@@ -32,6 +32,7 @@ For the Python script, install the required library using the following command 
 bash
 Copy
 pip install requests
+
 2. Prepare the Files
 Ensure the input rasters and shapefiles are correctly placed in the specified directories.
 
